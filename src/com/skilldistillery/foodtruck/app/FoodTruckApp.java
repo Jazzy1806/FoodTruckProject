@@ -40,7 +40,7 @@ public class FoodTruckApp {
 				System.out.println("On a scale of 1 - 5, with 1 being the worst and 5 being the best, how would you rate this food truck? ");
 				int truckRating = scan.nextInt();
 				
-				while (truckRating > 5) {
+				while (truckRating > 5 || truckRating < 1) {
 						System.out.println("That's not a valid rating. Enter a rating between 1 and 5: ");
 						truckRating = scan.nextInt();
 				}
