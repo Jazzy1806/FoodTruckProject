@@ -49,11 +49,4 @@ public class FoodTruck {
 		return  truckName + " serves " + foodType
 				+ " and has a rating of " + truckRating + ". TruckId : " + truckId;
 	}
-
-
-	
-	
-	
-	
-
 }
