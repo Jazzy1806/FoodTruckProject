@@ -115,6 +115,7 @@ public class FoodTruckApp {
 			
 			for (FoodTruck truck : fleet) {
 				if (truck != null && truck.getTruckRating() > highestRating) {
+					highestRating = truck.getTruckRating();
 					bestTruck = truck.toString();
 				}
 			}
