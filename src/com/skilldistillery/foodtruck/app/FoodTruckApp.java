@@ -14,7 +14,8 @@ public class FoodTruckApp {
 		public void run() {
 			FoodTruck[] fleet = new FoodTruck[5];
 			
-			System.out.println("When you've entered all of the food trucks, type \"quit\" to see the option menu.");
+			System.out.println("Welcome to Lunchtime Rush, the food truck showdown. Enter and rate up to 5 food trucks." 
+					+ "\n\tWhen you've entered all of the food trucks, type \"quit\" to see the option menu.");
 			for (int counter = 0; counter <= 4; counter++) {
 				fleet[counter] = addFoodTruck();
 				if (fleet[counter] == null) {
@@ -30,14 +31,14 @@ public class FoodTruckApp {
 		public FoodTruck addFoodTruck() {
 			FoodTruck truck = null;
 
-			System.out.println("\nEnter the name of the food truck?");
+			System.out.println("\nEnter the name of the food truck: ");
 			String truckName = scan.nextLine();
 			
 			if (!truckName.equals("quit")) {
 				System.out.println("What type of food is it? ");
 				String foodType = scan.nextLine();
 				
-				System.out.println("On a scale of 1 - 5, with 1 being the worst and 5 being the best, how would you rate this food truck? ");
+				System.out.println("Rate this food truck on a scale of 1 - 5, with 1 being Horrible and 5 being Amazing: ");
 				int truckRating = scan.nextInt();
 				
 				while (truckRating > 5 || truckRating < 1) {
